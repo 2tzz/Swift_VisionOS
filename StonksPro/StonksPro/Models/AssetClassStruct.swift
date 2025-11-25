@@ -14,7 +14,8 @@ struct AssetClassStruct: Identifiable, Hashable {
 
 var stocksAssetClass = AssetClassStruct(title: "Stocks")
 var cryptoAssetClass = AssetClassStruct(title: "Crypto")
-var optionsAssetClass = AssetClassStruct(title: "Options")
+var favoritesAssetClass = AssetClassStruct(title: "Favorites")
+var optionsAssetClass = AssetClassStruct(title: "Overview")
 
 extension AssetClassStruct {
 
@@ -22,6 +23,7 @@ extension AssetClassStruct {
         [
          cryptoAssetClass,
          stocksAssetClass,
+         favoritesAssetClass,
          optionsAssetClass
         ]
     }
@@ -38,6 +40,10 @@ extension AssetClassStruct {
         return optionsAssetClass
     }
 
+    static var favorites: AssetClassStruct {
+        return favoritesAssetClass
+    }
+
     // TODO: better way?
     var isStocks: Bool {
         return self.id == stocksAssetClass.id
@@ -49,5 +55,9 @@ extension AssetClassStruct {
 
     var isOptions: Bool {
         return self.id == optionsAssetClass.id
+    }
+
+    var isFavorites: Bool {
+        return self.id == favoritesAssetClass.id
     }
 }

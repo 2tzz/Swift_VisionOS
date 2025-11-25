@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct StonksProApp: App {
+struct StockStatApp: App {
     @Bindable var userSettings: UserSettingsModel = UserSettingsModel()
 
     var body: some Scene {
@@ -20,7 +20,7 @@ struct StonksProApp: App {
                     }
                 GeneralNewsView()
                     .tabItem {
-                        Label("Top News", systemImage: "star.fill")
+                        Label("Trending News", systemImage: "star.fill")
                     }
                 NewsView(userSettings: userSettings)
                     .tabItem {

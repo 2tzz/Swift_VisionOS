@@ -125,7 +125,7 @@ struct GeneralNewsView: View {
                                                         .font(.caption)
                                                         .fontWeight(.medium)
                                                 }
-                                                .foregroundStyle(.blue)
+                                                .foregroundStyle(.primary)
                                                 
                                                 Spacer()
                                                 
@@ -157,8 +157,8 @@ struct GeneralNewsView: View {
                                                     .fontWeight(.medium)
                                                     .padding(.horizontal, 10)
                                                     .padding(.vertical, 4)
-                                                    .background(Color.green.opacity(0.15))
-                                                    .foregroundStyle(.green)
+                                                    .background(Color.white.opacity(0.15))
+                                                    .foregroundStyle(.primary)
                                                     .cornerRadius(8)
                                             }
                                         }
@@ -187,7 +187,7 @@ struct GeneralNewsView: View {
                                     }
                                     .padding(.horizontal, 20)
                                     .padding(.vertical, 12)
-                                    .background(.ultraThickMaterial)
+                                    .background(Color(.systemBackground))
                                     .cornerRadius(12)
                                 }
                                 .frame(maxWidth: .infinity)
@@ -203,7 +203,7 @@ struct GeneralNewsView: View {
                     }
                 }
             }
-            .navigationTitle("General Top News")
+            .navigationTitle("General Trending News")
             .toolbar {
                 ToolbarItemGroup(placement: .automatic) {
                     Picker("Category", selection: $selectedCategory) {
@@ -245,7 +245,7 @@ struct GeneralNewsView: View {
         
         do {
             let result = try await StockNewsApiClient.fetchNews(
-                token: "dcd96hk63ej9a4tsjqhbbc3ybuererp5fszr6oji",
+                token: "yfqiw4pyonymlim2epd1sgf2hmehkuproiu17uh5",
                 section: StockNewsSection(rawValue: selectedCategory.rawValue) ?? .general,
                 type: .all,
                 items: 3,

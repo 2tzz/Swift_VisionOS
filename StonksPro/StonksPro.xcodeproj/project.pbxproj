@@ -10,6 +10,8 @@
 		75A3D69E2ED58FB600F06561 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A3D69D2ED58FB600F06561 /* NewsView.swift */; };
 		75A3D6A02ED5900300F06561 /* StockNewsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A3D69F2ED5900300F06561 /* StockNewsApiClient.swift */; };
 		75A3D6A82ED5993400F06561 /* GeneralNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A3D6A72ED5993400F06561 /* GeneralNewsView.swift */; };
+		75A3D6AA2ED59E7900F06561 /* MarketIndicatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A3D6A92ED59E7900F06561 /* MarketIndicatorsView.swift */; };
+		75A3D6AC2ED5BB8E00F06561 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A3D6AB2ED5BB8E00F06561 /* FavoritesManager.swift */; };
 		D05F5C502A487751005A8F92 /* StonksProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F5C4F2A487751005A8F92 /* StonksProApp.swift */; };
 		D05F5C522A487751005A8F92 /* StonksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F5C512A487751005A8F92 /* StonksView.swift */; };
 		D05F5C562A487752005A8F92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05F5C552A487752005A8F92 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		75A3D69D2ED58FB600F06561 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		75A3D69F2ED5900300F06561 /* StockNewsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockNewsApiClient.swift; sourceTree = "<group>"; };
 		75A3D6A72ED5993400F06561 /* GeneralNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNewsView.swift; sourceTree = "<group>"; };
+		75A3D6A92ED59E7900F06561 /* MarketIndicatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketIndicatorsView.swift; sourceTree = "<group>"; };
+		75A3D6AB2ED5BB8E00F06561 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
 		D05F5C482A487751005A8F92 /* StonksPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StonksPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05F5C4F2A487751005A8F92 /* StonksProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonksProApp.swift; sourceTree = "<group>"; };
 		D05F5C512A487751005A8F92 /* StonksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonksView.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				D05F5C512A487751005A8F92 /* StonksView.swift */,
 				75A3D69D2ED58FB600F06561 /* NewsView.swift */,
 				75A3D6A72ED5993400F06561 /* GeneralNewsView.swift */,
+				75A3D6A92ED59E7900F06561 /* MarketIndicatorsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				D05F5C702A488938005A8F92 /* AssetClassStruct.swift */,
 				D0EC960F2A48F904006D9661 /* CoinGeckoResponses.swift */,
 				D05F5C6C2A4879CD005A8F92 /* UserSettingsModel.swift */,
+				75A3D6AB2ED5BB8E00F06561 /* FavoritesManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,7 +287,9 @@
 				D0EC960E2A48F6D4006D9661 /* CryptoDetailsView.swift in Sources */,
 				D05F5C6F2A487A91005A8F92 /* SettingsView.swift in Sources */,
 				D0EC96192A49B9A4006D9661 /* Formatters.swift in Sources */,
+				75A3D6AC2ED5BB8E00F06561 /* FavoritesManager.swift in Sources */,
 				D05F5C712A488938005A8F92 /* AssetClassStruct.swift in Sources */,
+				75A3D6AA2ED59E7900F06561 /* MarketIndicatorsView.swift in Sources */,
 				D05F5C522A487751005A8F92 /* StonksView.swift in Sources */,
 				D0EC960C2A48D9D9006D9661 /* NumericExtensions.swift in Sources */,
 				75A3D6A82ED5993400F06561 /* GeneralNewsView.swift in Sources */,
